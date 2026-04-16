@@ -1,0 +1,580 @@
+{
+  "language": "AR",
+  "logo": "logo/logo.png",
+  "theme": "nature",
+  "themeGraphics": {
+    "gameTitle": "pics/gameTitle.png",
+    "startFrame": "startFrame.jpg",
+    "playGameFrame": "playGameFrame.jpg",
+    "textOverly": "textOverly.png",
+    "bgSet": "bgSet.png",
+    "drag": "drag.png",
+    "target": "target.png",
+    "continueBtn": "continueBtn.png",
+    "resultsFrame": "resultsFrame.jpg",
+    "instructionsOverlay": "instructionsOverlay.png",
+
+    "green": "green.png",
+    "yellow": "yellow.png",
+    "red": "red.png",
+    "infoImage": "infoImage.png",
+    "soundOn": "soundOn.png",
+    "soundOff": "soundOff.png",
+    "retakeBtn": "retake.png",
+
+    "prog_bar_1_bg": "prog_bar_1_bg.png",
+    "prog_bar_1_step_dark": "prog_bar_1_step_dark.png",
+    "prog_bar_1_step_correct1": "prog_bar_1_step_correct1.png",
+    "prog_bar_1_step_correct2": "prog_bar_1_step_correct2.png",
+    "prog_bar_1_step_wrong": "prog_bar_1_step_wrong.png",
+    "prog_bar_2_bg": "prog_bar_2_bg.png",
+    "prog_bar_2_fill": "prog_bar_2_fill.png",
+    "animation_1": "animation1.webm",
+
+    "nature": {
+      "font": "'Noto Sans Arabic', sans-serif"
+    },
+    "history": {
+      "font": "Arial, Helvetica, sans-serif"
+    }
+  },
+  
+  "overlay": {
+    "text": {
+      "AR": "اسحب المادة وأفلتها في مكانها الصحيح؛ عن طريق الضغط المطول عليها، ثم سحبها إلى المكان المناسب لإفلاتها",
+      "EN": ""
+    }
+  },
+  "elements": [
+    {
+      "id": "element_1",
+      "question": {
+        "text": {
+          "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: يوفر احتياجات مصر من الطاقة الشمسية",
+          "EN": "Classify the following materials into magnetic and non-magnetic materials."
+        }
+      },
+      "options": [
+        {
+          "img": "pics/pool.png",
+          "label": {
+            "AR": "بركة غليون",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/bnban.png",
+          "label": {
+            "AR": "بنبان",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/delta.png",
+          "label": {
+            "AR": "الدلتا الجديدة",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/mountain.png",
+          "label": {
+            "AR": "جبل الزيت",
+            "EN": ""
+          }
+        }
+      ],
+      "hint": {
+        "AR": "حيث إن مشروع بنبان من أكبر مشروعات توليد الطاقة الشمسية.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "الإجابة الصحيحة هي مشروع بنبان، وهو أحد أكبر مشروعات توليد الطاقة الشمسية في العالم.",
+        "EN": ""
+      },
+      "answer": "box_2"
+    },
+    {
+      "id": "element_2",
+      "question": {
+        "text": {
+          "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: زيادة الإنتاج السمكي، وتلبية احتياجات السوق المحلي",
+          "EN": ""
+        }
+      },
+      "options": [
+        {
+          "img": "pics/pool.png",
+          "label": {
+            "AR": "بركة غليون",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/bnban.png",
+          "label": {
+            "AR": "بنبان",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/delta.png",
+          "label": {
+            "AR": "الدلتا الجديدة",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/mountain.png",
+          "label": {
+            "AR": "جبل الزيت",
+            "EN": ""
+          }
+        }
+      ],
+      "hint": {
+        "AR": "حيث إنه مشروع مرتبط بالثروة السمكية، ويلبي احتياجات السوق المحلي.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "الإجابة الصحيحة هي بركة غليون؛ لأنه  يُعد واحدًا من أكبر مشاريع الاستزراع السمكي في العالم.",
+        "EN": ""
+      },
+      "answer": "box_1"
+    },
+    {
+      "id": "element_3",
+      "question": {
+        "text": {
+          "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: تخفيف الضغط السكاني عن القاهرة",
+          "EN": ""
+        }
+      },
+      "options": [
+        {
+          "img": "pics/capital.png",
+          "label": {
+            "AR": "العاصمة الإدارية الجديدة",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/bnban.png",
+          "label": {
+            "AR": "بنبان",
+            "EN": ""
+          }
+        },
+          {
+          "img": "pics/slums.png",
+          "label": {
+            "AR": "تطوير العشوائيات",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/delta.png",
+          "label": {
+            "AR": "الدلتا الجديدة",
+            "EN": ""
+          }
+        }
+      ],
+      "hint": {
+        "AR": "حيث إنه من أكبر المشروعات القومية التي تجذب الاستثمارات.",
+        "EN": "Iron is a material that is strongly attracted to magnets."
+      },
+      "system_hint": {
+        "AR": "الإجابة الصحيحة هي العاصمة الإدارية الجديدة؛ لأنها تخفف الضغط عن القاهرة وتوفر فرص عمل للشباب.",
+        "EN": "Iron is a magnetic material."
+      },
+      "answer": "box_1"
+    },
+    {
+      "id": "element_4",
+      "question": {
+        "text": {
+          "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: توفير حياة كريمة، وتحقيق العدالة الاجتماعية",
+          "EN": ""
+        }
+      },
+      "options": [
+        {
+          "img": "pics/pool.png",
+          "label": {
+            "AR": "بركة غليون",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/bnban.png",
+          "label": {
+            "AR": "بنبان",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/slums.png",
+          "label": {
+            "AR": "تطوير العشوائيات",
+            "EN": ""
+          }
+        },
+        {
+          "img": "pics/mountain.png",
+          "label": {
+            "AR": "جبل الزيت",
+            "EN": ""
+          }
+        }
+      ],
+      "hint": {
+        "AR": "حيث إن مشروع تطوير العشوائيات يعمل على تحسين مستوى المعيشة.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "توضيح: حيث إن مشروع تطوير العشوائيات يعمل على تحسين مستوى المعيشة.",
+        "EN": ""
+      },
+      "answer": "box_3"
+    },
+      {
+        "id": "element_5",
+        "question": {
+          "text": {
+            "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: يوفر احتياجات مصر من الطاقة الشمسية",
+            "EN": ""
+          }
+        },
+        "options": [
+          {
+            "img": "pics/capital.png",
+            "label": {
+              "AR": "العاصمة الإدارية الجديدة",
+              "EN": ""
+            }
+          },
+          {
+            "img": "pics/pool.png",
+            "label": {
+              "AR": "بركة غليون",
+              "EN": ""
+            }
+          },
+          {
+            "img": "pics/mountain.png",
+            "label": {
+              "AR": "جبل الزيت",
+              "EN": ""
+            }
+          },
+          {
+            "img": "pics/bnban.png",
+            "label": {
+              "AR": "بنبان",
+              "EN": ""
+            }
+          }
+        ],
+        "hint": {
+          "AR": "حيث إن مشروع بنبان من أكبر مشروعات توليد الطاقة الشمسية.",
+          "EN": ""
+        },
+        "system_hint": {
+          "AR": "الإجابة الصحيحة هي مشروع بنبان، وهو أحد أكبر مشروعات توليد الطاقة الشمسية في العالم.",
+          "EN": ""
+        },
+        "answer": "box_4"
+      },
+      {
+  "id": "element_6",
+  "question": {
+    "text": {
+      "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: تسهيل الانتقال بين المدن الجديدة",
+      "EN": ""
+    }
+  },
+  "options": [
+    {
+      "img": "pics/mountain.png",
+      "label": {
+        "AR": "جبل الزيت",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/transport.png",
+      "label": {
+        "AR": "مشروعات النقل",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/slums.png",
+      "label": {
+        "AR": "تطوير العشوائيات",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/delta.png",
+      "label": {
+        "AR": "الدلتا الجديدة",
+        "EN": ""
+      }
+    }
+  ],
+  "hint": {
+    "AR": "حيث إن مشروعات النقل تشمل الطرق والكباري والمحاور التي تعمل على تسهيل الانتقال بين المدن الجديدة.",
+    "EN": ""
+  },
+  "system_hint": {
+    "AR": "الإجابة الصحيحة هي مشروعات النقل؛ حيث إن مشروعات النقل تشمل الطرق والكباري والمحاور التي تعمل على تسهيل الانتقال بين المدن الجديدة.",
+    "EN": ""
+  },
+  "answer": "box_2"
+},
+
+{
+  "id": "element_7",
+  "question": {
+    "text": {
+      "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: توفير حياة كريمة، وتحقيق العدالة الاجتماعية",
+      "EN": ""
+    }
+  },
+  "options": [
+    {
+      "img": "pics/pool.png",
+      "label": {
+        "AR": "بركة غليون",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/bnban.png",
+      "label": {
+        "AR": "بنبان",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/slums.png",
+      "label": {
+        "AR": "تطوير العشوائيات",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/mountain.png",
+      "label": {
+        "AR": "جبل الزيت",
+        "EN": ""
+      }
+    }
+  ],
+  "hint": {
+    "AR": "حيث إن مشروع تطوير العشوائيات يعمل على تحسين مستوى المعيشة.",
+    "EN": ""
+  },
+  "system_hint": {
+    "AR": "توضيح: حيث إن مشروع تطوير العشوائيات يعمل على تحسين مستوى المعيشة.",
+    "EN": ""
+  },
+  "answer": "box_3"
+},
+
+{
+  "id": "element_8",
+  "question": {
+    "text": {
+      "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: جذب الاستثمارات، وإنشاء مجتمعات متطورة",
+      "EN": ""
+    }
+  },
+  "options": [
+    {
+      "img": "pics/capital.png",
+      "label": {
+        "AR": "العاصمة الإدارية الجديدة",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/bnban.png",
+      "label": {
+        "AR": "بنبان",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/pool.png",
+      "label": {
+        "AR": "بركة غليون",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/mountain.png",
+      "label": {
+        "AR": "جبل الزيت",
+        "EN": ""
+      }
+    }
+  ],
+  "hint": {
+    "AR": "حيث إن العاصمة الإدارية الجديدة تجذب الاستثمارات وتوفر مجتمعات عمرانية متطورة. ",
+    "EN": ""
+  },
+  "system_hint": {
+    "AR": "الإجابة الصحيحة هي العاصمة الإدارية الجديدة؛ حيث إنها تجذب الاستثمارات وتوفر مجتمعات عمرانية متطورة.",
+    "EN": ""
+  },
+  "answer": "box_1"
+},
+
+{
+  "id": "element_9",
+  "question": {
+    "text": {
+      "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: تسهيل الانتقال بين المدن الجديدة",
+      "EN": ""
+    }
+  },
+  "options": [
+    {
+      "img": "pics/delta.png",
+      "label": {
+        "AR": "الدلتا الجديدة",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/slums.png",
+      "label": {
+        "AR": "تطوير العشوائيات",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/transport.png",
+      "label": {
+        "AR": "مشروعات النقل",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/mountain.png",
+      "label": {
+        "AR": "جبل الزيت",
+        "EN": ""
+      }
+    }
+  ],
+  "hint": {
+    "AR": "حيث إن مشروعات النقل تشمل الطرق والكباري والمحاور التي تعمل على تسهيل الانتقال بين المدن الجديدة.",
+    "EN": ""
+  },
+  "system_hint": {
+    "AR": "الإجابة الصحيحة هي مشروعات النقل؛ حيث إن مشروعات النقل تشمل الطرق والكباري والمحاور التي تعمل على تسهيل الانتقال بين المدن الجديدة.",
+    "EN": ""
+  },
+  "answer": "box_3"
+},
+
+{
+  "id": "element_10",
+  "question": {
+    "text": {
+      "AR": "اختر اسم المشروع القومي الذي يحقق الهدف: توفير فائض للتصدير من الأسماك",
+      "EN": ""
+    }
+  },
+  "options": [
+    {
+      "img": "pics/pool.png",
+      "label": {
+        "AR": "بركة غليون",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/bnban.png",
+      "label": {
+        "AR": "بنبان",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/capital.png",
+      "label": {
+        "AR": "العاصمة الإدارية الجديدة",
+        "EN": ""
+      }
+    },
+    {
+      "img": "pics/transport.png",
+      "label": {
+        "AR": "مشروعات النقل",
+        "EN": ""
+      }
+    }
+  ],
+  "hint": {
+    "AR": "حيث إن مشروع بركة غليون يُعد من أكبر مشاريع الاستزراع السمكي في العالم.",
+    "EN": ""
+  },
+  "system_hint": {
+    "AR": "الإجابة الصحيحة هي بركة غليون؛ حيث إنه يُعد من أكبر مشاريع الاستزراع السمكي في العالم.",
+    "EN": ""
+  },
+  "answer": "box_1"
+}
+
+
+  ],
+  "note": {
+    "AR": "إجابة غير صحيحة",
+    "EN": "Wrong answer"
+  },
+  "continue": {
+    "AR": "متابعة",
+    "EN": "Continue"
+  },
+
+  "feedback_right": {
+    "AR": ["أحسنت! إجابة صحيحة"],
+    "EN": ["Well done", "Excellent!", "Correct answer"]
+  },
+  "feedback_wrong": {
+    "AR": ["حاول مرة أخرى", "إجابة غير صحيحة"],
+    "EN": ["Try again", "Wrong answer"]
+  },
+  "results": {
+    "great": {
+      "title": {
+        "AR": "ممتاز",
+        "EN": "Excellent"
+      },
+      "AR": "أحسنت! أداؤك ممتاز ويُظهر فهمًا جيِّدًا لمحتوى الدرس",
+      "EN": "Excellent! Your performance is outstanding and shows a good understanding of the lesson content."
+    },
+    "goodjob": {
+      "title": {
+        "AR": "جيد جداً",
+        "EN": "Very Good"
+      },
+      "AR": "أداؤك جيّد، و فهمت جزءًا كبيرًا من الدرس. واصل المحاولة لتحسين نتيجتك",
+      "EN": "Good job! You have a good understanding of the lesson. Keep trying to improve your score."
+    },
+
+    "fair": {
+      "title": {
+        "AR": "حاول مرة أخرى",
+        "EN": "Try Again"
+      },
+      "AR": "راجع الدرس وجرب من جديد، مع الممارسة سيتحسّن أداؤك",
+      "EN": "Nice try, review the lesson and try again. With practice, your performance will improve."
+    }
+  }
+}

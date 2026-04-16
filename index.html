@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منشئ ملف JSON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo-mark">JSON</div>
+      <div class="sidebar-title">منشئ الأسئلة</div>
+    </div>
+    <div class="sidebar-nav">
+      <button class="nav-btn active" onclick="scrollTo('section-general')">
+        <span class="nav-icon">⚙</span> الإعدادات العامة
+      </button>
+      <button class="nav-btn" onclick="scrollTo('section-elements')">
+        <span class="nav-icon">📝</span> الأسئلة
+      </button>
+      <button class="nav-btn" onclick="scrollTo('section-preview')">
+        <span class="nav-icon">👁</span> معاينة JSON
+      </button>
+    </div>
+    <div class="sidebar-footer">
+      <button class="download-btn" onclick="generateJSON()">
+        <span>⬇</span> تحميل JSON
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- General Settings -->
+    <section class="card" id="section-general">
+      <div class="card-header">
+        <h2 class="card-title">الإعدادات العامة</h2>
+        <p class="card-sub">البيانات الثابتة لملف الإعداد</p>
+      </div>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="field">
+              <label class="field-label">
+                صورة عنوان اللعبة 
+                <span class="required-tag">*</span>
+              </label>
+              <input type="file" id="gameTitle" class="input" accept="image/*">
+            </div>
+          <div class="field">
+            <label class="field-label">
+              اللغة
+              <span class="required-tag">*</span>
+            </label>
+            <select id="language" class="input select">
+              <option value="AR" selected>AR</option>
+              <option value="EN">EN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elements -->
+    <section id="section-elements">
+      <div class="section-title-row">
+        <h2 class="section-heading">الأسئلة</h2>
+        <button class="add-el-btn" onclick="addElement()">+ إضافة سؤال</button>
+      </div>
+      <div id="elements-container"></div>
+    </section>
+
+    <!-- Preview -->
+    <section class="card" id="section-preview">
+      <div class="card-header">
+        <h2 class="card-title">معاينة JSON</h2>
+        <button class="refresh-btn" onclick="refreshPreview()">تحديث</button>
+      </div>
+      <div class="preview-box">
+        <pre id="json-preview">{ سيظهر هنا الملف بعد إضافة الأسئلة... }</pre>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Element Template (hidden) -->
+<template id="el-template">
+  <div class="el-card" id="el_ID">
+    <div class="el-header">
+      <div class="el-meta">
+        <span class="el-number">سؤال #NUM</span>
+        <span class="el-id-badge">element_NUM</span>
+      </div>
+      <div class="el-actions">
+        <button class="icon-btn toggle-btn" onclick="toggleEl('ID')" title="طي / توسيع">▲</button>
+        <button class="icon-btn danger-btn" onclick="removeElement(this)" title="حذف">✕</button>
+      </div>
+    </div>
+
+    <div class="el-body" id="body_ID">
+
+      <div class="field">
+        <label class="field-label">نص السؤال <span class="required-tag">*</span></label>
+        <textarea class="input textarea" id="q_ar_ID" placeholder="اكتب نص السؤال ..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label class="field-label">تلميح للطالب <span class="required-tag">*</span></label>
+          <input type="text" class="input" id="hint_ar_ID" placeholder="تلميح يظهر للطالب عند الخطأ...">
+        </div>
+        <div class="field">
+          <label class="field-label">تلميح النظام <span class="required-tag">*</span></label>
+          <input type="text" class="input" id="sys_hint_ar_ID" placeholder="الإجابة الصحيحة هي...">
+        </div>
+      </div>
+
+      
+
+      <div class="options-section">
+        <div class="options-header">
+          <label class="field-label">الخيارات <span class="required-tag">*</span></label>
+          <button class="add-opt-btn" onclick="addOption('ID')">+ خيار</button>
+        </div>
+        <div class="options-labels">
+          <span>التسمية *</span>
+          <span> الصورة <em>(اختياري)</em></span>
+          
+          <span></span>
+        </div>
+        <div class="options-list" id="options_ID"></div>
+      </div>
+
+      <div class="field" style="max-width:300px">
+        <label class="field-label">الإجابة الصحيحة <span class="required-tag">*</span></label>
+        <select class="input select" id="answer_ID">
+          <option value="box_1">1 </option>
+          <option value="box_2">2 </option>
+          <option value="box_3">3 </option>
+          <option value="box_4">4 </option>
+        </select>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- Option Template (hidden) -->
+<template id="opt-template">
+  <div class="opt-row" id="opt_ELID_OID">
+    <input type="text" class="input" id="ol_ar_ELID_OID" placeholder="اسم الخيار...">
+    
+    <input type="file" class="input img-file" id="oi_ELID_OID" accept="image/*">
+
+    <button class="icon-btn danger-btn small" onclick="removeOption(this)">✕</button>
+  </div>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>
