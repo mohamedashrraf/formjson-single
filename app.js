@@ -271,15 +271,10 @@ function updateAnswerOptions(elUid) {
 ───────────────────────────────────────── */
 function buildJSON(validate = true) {
   const language = _getVal('language').trim();
-  const gameTitleInput = document.getElementById("gameTitle");
-  let gameTitle = "";
-  if (gameTitleInput && gameTitleInput.files.length > 0) {
-    const fileName = gameTitleInput.files[0].name;
-    gameTitle = "pics/" + fileName;
-  }
+  const gameTitle = _getVal('gameTitle').trim();
 
   if (validate) {
-    if (!gameTitle) { alert('يرجى إدخال صورة عنوان اللعبة.'); return null; }
+    if (!gameTitle) { alert('يرجى إدخال عنوان النشاط.'); return null; }
     if (!language) { alert('يرجى إدخال اللغة.'); return null; }
   }
 
